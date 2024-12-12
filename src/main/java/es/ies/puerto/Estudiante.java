@@ -35,6 +35,15 @@ public class Estudiante extends Persona {
         this.matricula = matricula;
     }
 
+    /**
+     * Metodo que retorna estudiar
+     * @return
+     */
+    public String estudiar()
+    {
+        return "Estoy estudiando";
+    }
+
     @Override
     String pensar(){
         return "Tengo examen mañana";
