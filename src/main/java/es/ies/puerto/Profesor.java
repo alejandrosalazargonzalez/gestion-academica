@@ -21,4 +21,10 @@ public class Profesor extends Persona {
         super(id,nombre,edad);
         this.especialidad = especialidad;
     }
+
+    @Override
+    String pensar()
+    {
+        return "Mañana tengo que corregir el examen";
+    }
 }

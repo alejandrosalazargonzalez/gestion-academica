@@ -1,7 +1,7 @@
 package es.ies.puerto;
 import java.util.Objects;
 
-public class Persona {
+public abstract class Persona {
     private String id;
     private String nombre;
     private int edad;
@@ -47,8 +47,10 @@ public class Persona {
      */
     public String saludar()
     {
-        return "Hola yo soy" + nombre;
+        return "Hola yo soy " + nombre;
     }
+
+    abstract String pensar();
 
     @Override
     public boolean equals(Object o) {

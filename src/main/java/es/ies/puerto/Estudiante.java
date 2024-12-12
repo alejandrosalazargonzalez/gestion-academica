@@ -36,6 +36,11 @@ public class Estudiante extends Persona {
     }
 
     @Override
+    String pensar(){
+        return "Tengo examen mañana";
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == this)
             return true;
@@ -45,6 +50,7 @@ public class Estudiante extends Persona {
         Estudiante estudiante = (Estudiante) o;
         return Objects.equals(matricula, estudiante.matricula);
     }
+
 
     @Override
     public String toString() {
