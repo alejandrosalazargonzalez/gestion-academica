@@ -4,6 +4,7 @@ import java.util.Objects;
 public class Persona {
     private String id;
     private String nombre;
+    private int edad;
 
     /**
      * Constructor vacio
@@ -15,10 +16,12 @@ public class Persona {
      * Constructor completo
      * @param id
      * @param nombre
+     * @param edad
      */
-    public Persona(String id, String nombre) {
+    public Persona(String id, String nombre, int edad) {
         this.id = id;
         this.nombre = nombre;
+        this.edad = edad;
     }
 
     //Getter Setter
@@ -38,6 +41,14 @@ public class Persona {
         this.nombre = nombre;
     }
 
+    /**
+     * Funcion que saluda
+     * @return String con mensaje
+     */
+    public String saludar()
+    {
+        return "Hola yo soy" + nombre;
+    }
 
     @Override
     public boolean equals(Object o) {
